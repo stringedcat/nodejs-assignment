@@ -1,4 +1,4 @@
-CURRENT_DIR = $(shell pwd)
+CURRENT_DIR = ${CURDIR}
 
 .DEFAULT: help
 all: help
