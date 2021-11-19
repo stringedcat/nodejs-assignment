@@ -6,6 +6,7 @@
 module.exports = (teams) => {
   let arr = [];
   const teamsActive = teams.filter((player) => player.isActive === true);
+
   for (let p = 0; p < teamsActive.length; p++) {
     if (!arr.find((element) => element.team === teamsActive[p].team)) {
       arr.push({ team: teamsActive[p].team, points: 0 });
